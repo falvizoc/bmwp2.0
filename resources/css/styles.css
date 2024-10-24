@@ -1,0 +1,28 @@
+.container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-10;
+}
+
+.form-input{
+    @apply rounded-md border border-gray-300 cursor-pointer;
+}
+
+.form-control{
+    @apply cursor-pointer mt-2 block w-full px-3 py-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:border-yellow-600 focus:outline-none;
+}
+
+.typewriter-container {
+    display: inline-flex;
+    align-items: center;
+    font-family: monospace;
+}
+
+.typewriter-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
