@@ -12,6 +12,11 @@ class FooterApp extends Component
 
     public function mount()
     {
+        if (app()->runningInConsole()) {
+            // No ejecutamos consultas si el comando se está ejecutando desde Artisan
+            return;
+        }
+        
         $this->solutions = Solution::with('services')->get();
     }
 
