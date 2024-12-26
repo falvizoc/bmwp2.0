@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Solution;
+use Illuminate\Support\Facades\Schema;
 use Livewire\Component;
 
 class NavigationApp extends Component
@@ -12,12 +13,11 @@ class NavigationApp extends Component
 
     public function mount()
     {
-        if (app()->runningInConsole()) {
-            // No ejecutamos consultas si el comando se está ejecutando desde Artisan
-            return;
+        if (Schema::hasTable('solutions')) {
+            $this->solutions = Solution::with('services')->get();
+        } else {
+            $this->solutions = collect(); // Retorna una colección vacía si no existe la tabla
         }
-        
-        $this->solutions = Solution::with('services')->get();
     }
 
     public function render()
