@@ -58,49 +58,51 @@
         <div x-show="openMenuSoluciones" class="absolute z-50 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full">
             <div class="px-4 py-2 mx-auto text-gray-800" x-data="{openMenu: false}" @click.away="openMenu = false">
                 <ul class="grid sm:grid-cols-3 divide-x divide-gray-200 dark:divide-gray-600">
-                    @foreach ($solutions as $solution)
-                        <li class="relative px-4">
-                            @if ($solution->services->count())
-                                <a href="javascript:void(0)" @click="openMenu = openMenu === {{ $solution->id }} ? null : {{ $solution->id }}" class="my-1 block p-4 rounded-lg hover:bg-gray-100" :class="{'bg-gray-100': openMenu === {{ $solution->id }} }">
-                                    <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
-                                        <div class="flex-1">
-                                            <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
-                                            <span>{{ $solution->name }}</span>
+                    @if ($solutions->count())
+                        @foreach ($solutions as $solution)
+                            <li class="relative px-4">
+                                @if ($solution->services->count())
+                                    <a href="javascript:void(0)" @click="openMenu = openMenu === {{ $solution->id }} ? null : {{ $solution->id }}" class="my-1 block p-4 rounded-lg hover:bg-gray-100" :class="{'bg-gray-100': openMenu === {{ $solution->id }} }">
+                                        <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
+                                            <div class="flex-1">
+                                                <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
+                                                <span>{{ $solution->name }}</span>
+                                            </div>
+                                            <i :class="openMenu === {{ $solution->id }} ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="ml-auto text-gray-700 text-sm transition-transform duration-200"></i>
                                         </div>
-                                        <i :class="openMenu === {{ $solution->id }} ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="ml-auto text-gray-700 text-sm transition-transform duration-200"></i>
-                                    </div>
-                                </a>
-                            @else
-                                <a href="{{route('servicios.'.$solution->slug)}}" class="my-1 block p-4 rounded-lg hover:bg-gray-100">
-                                    <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
-                                        <div class="flex-1">
-                                            <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
-                                            <span>{{ $solution->name }}</span>
+                                    </a>
+                                @else
+                                    <a href="{{route('servicios.'.$solution->slug)}}" class="my-1 block p-4 rounded-lg hover:bg-gray-100">
+                                        <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
+                                            <div class="flex-1">
+                                                <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
+                                                <span>{{ $solution->name }}</span>
+                                            </div>
+                                            <i class="fas fa-arrow-right ml-auto text-gray-700 text-sm transition-transform duration-200"></i>
                                         </div>
-                                        <i class="fas fa-arrow-right ml-auto text-gray-700 text-sm transition-transform duration-200"></i>
+                                    </a>
+                                @endif
+                                
+                                @if ($solution->services->count())
+                                    <div x-show="openMenu === {{ $solution->id }}"  x-transition class="w-[calc(100%-2rem)] absolute z-50 mt-2 bg-white rounded-lg border border-gray-100">
+                                        <ul class="grid grid-cols-1 divide-y divide-gray-100 rounded-none">
+                                            @foreach ($solution->services as $service)
+                                                <li class="p-4 hover:bg-gray-100">
+                                                    <a href="{{route('servicios.'.$service->slug)}}" class="text-gray-900 text-base rounded-lg">
+                                                        <div class="flex items-center space-x-1">
+                                                            <ion-icon name="{{ $service->icon }}" class="text-xl"></ion-icon>
+                                                            <span class="">{{ $service->name }}</span>
+                                                        </div>
+                                                        <span class="text-gray-500 tracking-wide text-sm">{{ $service->description }}</span>
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                     </div>
-                                </a>
-                            @endif
-                            
-                            @if ($solution->services->count())
-                                <div x-show="openMenu === {{ $solution->id }}"  x-transition class="w-[calc(100%-2rem)] absolute z-50 mt-2 bg-white rounded-lg border border-gray-100">
-                                    <ul class="grid grid-cols-1 divide-y divide-gray-100 rounded-none">
-                                        @foreach ($solution->services as $service)
-                                            <li class="p-4 hover:bg-gray-100">
-                                                <a href="{{route('servicios.'.$service->slug)}}" class="text-gray-900 text-base rounded-lg">
-                                                    <div class="flex items-center space-x-1">
-                                                        <ion-icon name="{{ $service->icon }}" class="text-xl"></ion-icon>
-                                                        <span class="">{{ $service->name }}</span>
-                                                    </div>
-                                                    <span class="text-gray-500 tracking-wide text-sm">{{ $service->description }}</span>
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
-                        </li>
-                    @endforeach
+                                @endif
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
         </div>

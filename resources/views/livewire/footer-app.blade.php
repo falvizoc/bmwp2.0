@@ -29,34 +29,36 @@
                   </ul>
               </div>
               
-              @foreach ($solutions as $solution)
-                 <div class="col-span-2 sm:col-span-1">
-                   
-                    @if ($solution->services->count())
+              @if ($solutions->count())
+                @foreach ($solutions as $solution)
+                  <div class="col-span-2 sm:col-span-1">
+                    
+                      @if ($solution->services->count())
 
-                        <p class="font-medium text-white">
-                            <span>{{ $solution->name }}</span>
-                        </p>
+                          <p class="font-medium text-white">
+                              <span>{{ $solution->name }}</span>
+                          </p>
 
-                        <ul class="mt-6 space-y-4 text-sm">
-                            @foreach ($solution->services as $service)
-                                <li>
-                                    <a href="{{route('servicios.'.$service->slug)}}" class="text-white transition hover:opacity-75"> 
-                                        <span>{{ $service->name }}</span>
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    @else
-                        <a href="{{route('servicios.'.$solution->slug)}}" class="font-medium text-white flex items-center space-x-2">
-                            <span>
-                                {{ $solution->name }}
-                            </span>
-                            <i class="fas fa-arrow-right ml-auto text-white text-sm transition-transform duration-200"></i>
-                        </a>
-                    @endif
-                </div>
-              @endforeach
+                          <ul class="mt-6 space-y-4 text-sm">
+                              @foreach ($solution->services as $service)
+                                  <li>
+                                      <a href="{{route('servicios.'.$service->slug)}}" class="text-white transition hover:opacity-75"> 
+                                          <span>{{ $service->name }}</span>
+                                      </a>
+                                  </li>
+                              @endforeach
+                          </ul>
+                      @else
+                          <a href="{{route('servicios.'.$solution->slug)}}" class="font-medium text-white flex items-center space-x-2">
+                              <span>
+                                  {{ $solution->name }}
+                              </span>
+                              <i class="fas fa-arrow-right ml-auto text-white text-sm transition-transform duration-200"></i>
+                          </a>
+                      @endif
+                  </div>
+                @endforeach
+              @endif
              
             </div>
           </div>
