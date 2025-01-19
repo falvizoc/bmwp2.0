@@ -4,10 +4,14 @@
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('img/logos/logo-bitmovil-blanco.png') }}" class="h-9" alt="Logo" />
             </a>
-            <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+            <button @click="openMenuSoluciones = !openMenuSoluciones" type="button" 
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-primary-dark transition-all duration-300">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <svg x-show="!openMenuSoluciones" class="w-5 h-5 transition-transform duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+                <svg x-show="openMenuSoluciones" class="w-5 h-5 transition-transform duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
             <div id="mega-menu-full" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
@@ -56,14 +60,14 @@
             </div>
         </div>
         <div x-show="openMenuSoluciones" class="absolute z-50 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full">
-            <div class="px-4 py-2 mx-auto text-gray-800" x-data="{openMenu: false}" @click.away="openMenu = false">
-                <ul class="grid sm:grid-cols-3 divide-x divide-gray-200 dark:divide-gray-600">
+            <div class="px-0 md:px-4 py-2 mx-auto text-gray-800" x-data="{openMenu: false}" @click.away="openMenu = false">
+                <ul class="grid sm:grid-cols-3 md:divide-x divide-gray-200 dark:divide-gray-600">
                     @if ($solutions->count())
                         @foreach ($solutions as $solution)
                             <li class="relative px-4">
                                 @if ($solution->services->count())
                                     <a href="javascript:void(0)" @click="openMenu = openMenu === {{ $solution->id }} ? null : {{ $solution->id }}" class="my-1 block p-4 rounded-lg hover:bg-gray-100" :class="{'bg-gray-100': openMenu === {{ $solution->id }} }">
-                                        <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
+                                        <div class="text-sm md:text-lg font-regular tracking-wide flex items-center md:space-x-2">
                                             <div class="flex-1">
                                                 <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
                                                 <span>{{ $solution->name }}</span>
@@ -73,7 +77,7 @@
                                     </a>
                                 @else
                                     <a href="{{route('servicios.'.$solution->slug)}}" class="my-1 block p-4 rounded-lg hover:bg-gray-100">
-                                        <div class="text-lg font-regular tracking-wide flex items-center space-x-2">
+                                        <div class="text-sm md:text-lg font-regular tracking-wide flex items-center space-x-2">
                                             <div class="flex-1">
                                                 <ion-icon name="{{ $solution->icon }}" class="text-lg"></ion-icon>
                                                 <span>{{ $solution->name }}</span>
@@ -91,9 +95,9 @@
                                                     <a href="{{route('servicios.'.$service->slug)}}" class="text-gray-900 text-base rounded-lg">
                                                         <div class="flex items-center space-x-1">
                                                             <ion-icon name="{{ $service->icon }}" class="text-xl"></ion-icon>
-                                                            <span class="">{{ $service->name }}</span>
+                                                            <span class="text-sm md:text-lg">{{ $service->name }}</span>
                                                         </div>
-                                                        <span class="text-gray-500 tracking-wide text-sm">{{ $service->description }}</span>
+                                                        <span class="text-gray-500 tracking-wide text-xs md:text-sm">{{ $service->description }}</span>
                                                     </a>
                                                 </li>
                                             @endforeach

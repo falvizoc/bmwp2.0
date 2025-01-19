@@ -95,7 +95,7 @@
     {{-- SECCIÓN PARTNERS --}}
     <section class="bg-gray-100">
         <div class="py-8 lg:py-16 mx-auto px-4">
-            <h3 class="mb-4 lg:mb-6 text-4xl md:text-5xl tracking-wide leading-tight text-center text-primary">
+            <h3 class="mb-4 lg:mb-6 text-3xl md:text-5xl tracking-wide leading-tight text-center text-primary">
                 Partners
             </h3>
             <h4 class="text-xl md:text-3xl font-light text-gray-800 text-center mb-10">

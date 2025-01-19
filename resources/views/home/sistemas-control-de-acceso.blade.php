@@ -2,10 +2,10 @@
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/controlAcceso.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
-            <h1 class="text-white text-4xl md:text-5xl 2xl:text-6xl mb-4">
+            <h1 class="text-white text-3xl md:text-5xl 2xl:text-6xl mb-4">
                 Control de Acceso Seguro
             </h1>
-            <h2 class="tracking-wide text-2xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
+            <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
                 Gestiona el acceso a tus instalaciones de forma segura y eficiente
             </h2>
             <a href="#" class="text-white text-sm md:text-base tracking-tight bg-red-600 px-5 py-3 h-14 rounded-full hover:bg-red-700 focus:bg-red-600 focus:ring-4 focus:ring-red-400 transition duration-200">
