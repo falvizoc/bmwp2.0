@@ -236,7 +236,7 @@
                 <span class="px-4 py-2 text-gray-500 text-xs uppercase">Menu Principal</span>
 
                 <a
-                    href="https://elportalviajes.com/asdfasdfasdf/"
+                    href=""
                     target="_blank"
                     role="menuitem"
                     class="block py-2 px-4 text-gray-700 transition-colors rounded-md dark:text-light hover:bg-sky-100 dark:hover:bg-sky-600"
