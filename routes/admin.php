@@ -26,3 +26,5 @@ Route::resource('solutions', SolutionController::class)->names('solutions');
 Route::resource('services', ServiceController::class)->names('services');
 Route::resource('pages', PageController::class)->names('pages');
 Route::resource('reviews', ReviewController::class);
+
+Route::get('firma', fn() => view('admin.firma'))->name('firma');
