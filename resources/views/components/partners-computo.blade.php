@@ -1,4 +1,4 @@
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white">
     <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 md:px-8">
         <h3 class="mb-8 px-4 lg:mb-6 text-3xl md:text-5xl font-light tracking-wide leading-tight text-center text-green-500">
             Partners
