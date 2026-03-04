@@ -1,6 +1,6 @@
 <x-app-layout>
-    @section('title', 'Redes Inalámbricas Empresariales Cisco en Tampico | Bitmovil')
-    @section('description', 'Diseño, instalación y configuración de redes WiFi y LAN empresariales con equipos Cisco y Fortinet. Cobertura en Tampico, Tamaulipas y norte de México.')
+    @section('title', 'Redes Inalámbricas Empresariales en Tampico | Bitmovil')
+    @section('description', 'Diseño, instalación y configuración de redes WiFi y LAN empresariales con equipos Fortinet. Cobertura en Tampico, Tamaulipas y norte de México.')
 
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/redesInalambricas.png') }}')">

@@ -1,12 +1,12 @@
 <x-app-layout>
     @section('title', 'Bitmovil — Integración TI en Tampico | Redes, Seguridad y Licenciamiento')
-    @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos redes Cisco, seguridad Fortinet, licencias Microsoft y Autodesk, videovigilancia y más para empresas del norte de México.')
+    @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos seguridad Fortinet, licencias Microsoft y Autodesk, videovigilancia y más para empresas del norte de México.')
 
     {{-- HERO ESTÁTICO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
              style="background-image: url('{{ asset('assets/img/carousel-ms.jpg') }}')">
         <div class="absolute z-10 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
-            <div class="max-w-2xl">
+            <div class="max-w-3xl">
                 <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-5">
                     Tampico · Tamaulipas · Norte de México
                 </p>
@@ -14,12 +14,12 @@
                     Integración TI para empresas en el norte de México.
                 </h1>
                 <p class="text-gray-300 text-sm md:text-lg font-light mb-8">
-                    Cisco · Fortinet · Microsoft · Autodesk · Dell · HP
+                    Fortinet · Microsoft · Autodesk · Dell · HP
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="https://wa.link/bitmovil"
-                       class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-primary rounded-full hover:opacity-90 transition duration-200">
-                        <i class="fab fa-whatsapp"></i> Cotiza por WhatsApp
+                       class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-green-500 hover:bg-green-600 rounded-full transition duration-200">
+                        <i class="fab fa-whatsapp text-xl"></i> Cotiza por WhatsApp
                     </a>
                     <a href="#propuesta"
                        class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white border border-white/25 rounded-full hover:bg-white/10 transition duration-200">

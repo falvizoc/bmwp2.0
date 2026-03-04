@@ -7,7 +7,7 @@
 
         {{-- SEO: Title y Description --}}
         <title>@yield('title', 'Bitmovil — Soluciones TI en Tampico, Tamaulipas')</title>
-        <meta name="description" content="@yield('description', 'Integramos tecnología para empresas del norte de México: redes, seguridad informática, licenciamiento Microsoft, Cisco, Fortinet y más. Tampico, Tamaulipas.')">
+        <meta name="description" content="@yield('description', 'Integramos tecnología para empresas del norte de México: redes, seguridad informática, licenciamiento Microsoft, Fortinet y más. Tampico, Tamaulipas.')">
         <meta name="robots" content="index, follow">
 
         {{-- Canonical --}}
@@ -17,7 +17,7 @@
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Bitmovil">
         <meta property="og:title" content="@yield('og_title', 'Bitmovil — Soluciones TI en Tampico, Tamaulipas')">
-        <meta property="og:description" content="@yield('og_description', 'Integramos tecnología para empresas del norte de México: redes, seguridad informática, licenciamiento Microsoft, Cisco, Fortinet y más.')">
+        <meta property="og:description" content="@yield('og_description', 'Integramos tecnología para empresas del norte de México: redes, seguridad informática, licenciamiento Microsoft, Fortinet y más.')">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="@yield('og_image', asset('img/logos/favicon_192x192.png'))">
         <meta property="og:locale" content="es_MX">

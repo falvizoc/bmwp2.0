@@ -26,7 +26,7 @@
                         Más de <b>10 años</b> construyendo confianza tecnológica.
                     </h2>
                     <p class="text-base md:text-lg text-gray-600 mb-4">
-                        Fundada en Tampico, Tamaulipas, Bitmovil nació con la misión de acercar tecnología empresarial de clase mundial a las PyMEs del noreste de México. Hoy integramos soluciones de los fabricantes más importantes — Microsoft, Cisco, Fortinet, Autodesk — con un enfoque en calidad, tiempo y costo.
+                        Fundada en Tampico, Tamaulipas, Bitmovil nació con la misión de acercar tecnología empresarial de clase mundial a las PyMEs del noreste de México. Hoy integramos soluciones de los fabricantes más importantes — Microsoft, Fortinet, Autodesk — con un enfoque en calidad, tiempo y costo.
                     </p>
                     <p class="text-base md:text-lg text-gray-600 mb-6">
                         Nuestro equipo de ingenieros certificados entiende que la tecnología debe resolver problemas reales, no crear nuevos. Por eso cada proyecto parte de un dimensionamiento personalizado antes de cualquier implementación.

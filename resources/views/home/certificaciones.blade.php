@@ -22,7 +22,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('assets/img/microsoft.png') }}" alt="Microsoft" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-microsoft.png') }}" alt="Microsoft" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Microsoft Partner</h2>
                     <p class="text-sm text-gray-600">Licenciamiento por volumen para empresas, gobierno y educación. CSP certificado.</p>
                 </div>
@@ -32,7 +32,7 @@
                     <p class="text-sm text-gray-600">Seguridad de red, firewall, SD-WAN y protección endpoint con soluciones Fortinet certificadas.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-tripplite.svg') }}" alt="Tripp Lite by Eaton" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-tripplite.jpg') }}" alt="Tripp Lite by Eaton" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Tripp Lite by Eaton</h2>
                     <p class="text-sm text-gray-600">UPS, PDUs y protección eléctrica para infraestructura TI crítica y centros de datos.</p>
                 </div>

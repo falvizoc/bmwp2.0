@@ -1,6 +1,6 @@
 <x-app-layout>
-    @section('title', 'Seguridad Informática en Tampico | Fortinet, Cisco — Bitmovil')
-    @section('description', 'Soluciones de ciberseguridad y protección de redes para empresas de Tampico y el norte de México. Partner certificado Fortinet y Cisco Systems.')
+    @section('title', 'Seguridad Informática en Tampico | Fortinet — Bitmovil')
+    @section('description', 'Soluciones de ciberseguridad y protección de redes para empresas de Tampico y el norte de México. Partner certificado Fortinet.')
 
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/seguridadInformatica.png') }}')">

@@ -23,10 +23,10 @@
                     <li><a href="{{ route('contacto') }}" class="text-white hover:text-yellow-400 transition-colors">Contacto</a></li>
                 </ul>
                 <div class="flex items-center space-x-2">
-                    <a target="_blank" rel="nofollow" href="https://store.bitmovil.mx/" aria-label="Tienda en Línea"
+                    {{-- <a target="_blank" rel="nofollow" href="https://store.bitmovil.mx/" aria-label="Tienda en Línea"
                        class="inline-flex items-center space-x-1 px-3 py-1.5 text-sm text-white bg-red-600 hover:bg-red-700 rounded-full transition">
                         <i class="fas fa-shopping-cart"></i><span>Tienda</span>
-                    </a>
+                    </a> --}}
                     <a target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=5218332272527&text=%C2%A1Hola!%20Bitmovil." aria-label="WhatsApp"
                        class="inline-flex items-center justify-center w-8 h-8 bg-green-500 hover:scale-105 rounded-full transition">
                         <i class="fab fa-whatsapp text-white text-lg"></i>
