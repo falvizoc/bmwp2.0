@@ -22,32 +22,32 @@
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-1.png') }}" alt="Microsoft" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('assets/img/microsoft.png') }}" alt="Microsoft" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Microsoft Partner</h2>
                     <p class="text-sm text-gray-600">Licenciamiento por volumen para empresas, gobierno y educación. CSP certificado.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-5.png') }}" alt="Fortinet" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('assets/img/logo-fortinet-partner.png') }}" alt="Fortinet" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Fortinet Partner</h2>
                     <p class="text-sm text-gray-600">Seguridad de red, firewall, SD-WAN y protección endpoint con soluciones Fortinet certificadas.</p>
                 </div>
-                <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-6.png') }}" alt="Cisco" class="h-12 object-contain mb-6">
-                    <h2 class="text-lg font-semibold text-gray-900 mb-2">Cisco Partner</h2>
-                    <p class="text-sm text-gray-600">Redes, switching, routing y soluciones cloud con respaldo oficial Cisco Systems.</p>
+                <div class="bg-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                    <img loading="lazy" src="{{ asset('assets/img/logo-cisco-bco.png') }}" alt="Cisco" class="h-12 object-contain mb-6">
+                    <h2 class="text-lg font-semibold text-white mb-2">Cisco Partner</h2>
+                    <p class="text-sm text-gray-300">Redes, switching, routing y soluciones cloud con respaldo oficial Cisco Systems.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-2.png') }}" alt="Autodesk" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('assets/img/autodesk.png') }}" alt="Autodesk" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Autodesk Reseller</h2>
                     <p class="text-sm text-gray-600">Licenciamiento oficial de AutoCAD, Revit y soluciones de diseño 3D para ingeniería y construcción.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-4.png') }}" alt="HP" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-1.png') }}" alt="HP" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">HP Partner</h2>
                     <p class="text-sm text-gray-600">Equipo de cómputo, servidores e impresión HP para entornos empresariales.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-3.png') }}" alt="Dell" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-5.png') }}" alt="Dell" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Dell Technologies</h2>
                     <p class="text-sm text-gray-600">Servidores, almacenamiento y workstations Dell para infraestructura TI empresarial.</p>
                 </div>
