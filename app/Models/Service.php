@@ -11,7 +11,7 @@ class Service extends Model
 
     protected $table = 'services';
 
-    protected $fillable = ['solution_id','name','description','slug','icon'];
+    protected $fillable = ['solution_id','name','description','slug','icon','show_in_nav'];
 
     public function solution()
     {

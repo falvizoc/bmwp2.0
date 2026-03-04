@@ -1,4 +1,4 @@
-<section class="py-10 bg-white overflow-hidden">
+<section id="hablemos" class="py-10 bg-white overflow-hidden">
     <div class="max-w-md md:max-w-4xl container mx-auto px-4 bg-gray-100 rounded-2xl shadow-md">
       <div class="p-8">
         <div class="flex flex-col md:flex-row items-center justify-between -m-4 text-center md:text-left">

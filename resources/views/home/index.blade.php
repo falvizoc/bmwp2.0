@@ -1,130 +1,73 @@
 <x-app-layout>
-    <div id="carouselControlsIndicators" class="swiffy-slider relative h-[26rem] slider-nav-autoplay slider-item-nogap" data-slider-nav-autoplay-interval="7000">
-        <div class="slider-container">
-            <!-- Slide -->
-            <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
-                    <img src="{{ asset('assets/img/microsoft.png') }}" class="h-16 md:h-24" alt="">
-                    <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl">
-                        Licencias por volumen para
-                    </h2>
-                    <div class="text-green-500 text-2xl md:text-5xl typewriter">
-                        <span class="typewriter-container">
-                            <span class="typewriter-text" data-words="Empresas, Gobierno, Escuelas"></span>
-                            <span class="typewriter-cursor"></span>
-                        </span>
+    @section('title', 'Integración TI para Empresas en ' . $geoLabel . ' | Bitmovil')
+    @section('description', 'Empresa de tecnología en ' . $geoLabel . '. Integramos seguridad Fortinet, licencias Microsoft, videovigilancia y más. Cotiza hoy.')
+    @section('og_title', 'Integración TI para Empresas en ' . $geoLabel . ' | Bitmovil')
+
+    {{-- HERO ESTÁTICO --}}
+    <section class="relative h-full min-h-[65vh] bg-no-repeat bg-center bg-cover"
+             style="background-image: url('{{ asset('assets/img/carousel-ms.jpg') }}')">
+        <div class="absolute inset-0 bg-black/60 -z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-16 md:py-20 mt-10 h-full min-h-[65vh] flex items-center">
+            <div class="grid md:grid-cols-5 gap-8 items-center w-full">
+
+                {{-- Columna izquierda --}}
+                <div class="col-span-5 md:col-span-3">
+                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
+                        Tampico · Tamaulipas · Norte de México
+                    </p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight tracking-wide mb-4">
+                        Integración TI para Empresas en {{ $geoLabel }}.
+                    </h1>
+                    <div class="flex flex-wrap items-center gap-4 mb-6">
+                        <img src="{{ asset('img/partners/logo-fortinet.svg') }}" class="h-5 grayscale opacity-70" alt="Fortinet Partner">
+                        <img src="{{ asset('img/partners/logo-microsoft.png') }}" class="h-4 grayscale opacity-70" alt="Microsoft">
+                        <img src="{{ asset('img/partners/logo-hp.png') }}" class="h-5 grayscale opacity-70" alt="HP">
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://wa.link/bitmovil"
+                           class="btn-primary inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-green-500 hover:bg-green-600 rounded-full transition duration-200">
+                            <i class="fab fa-whatsapp text-xl"></i> Cotiza por WhatsApp
+                        </a>
+                        <a href="#propuesta"
+                           class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white border border-white/25 rounded-full hover:bg-white/10 transition duration-200">
+                            Ver soluciones <i class="fa fa-angle-down text-xs"></i>
+                        </a>
                     </div>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-green-500 rounded-full overflow-hidden group">
-                    <div class="absolute top-0 right-full w-full h-full bg-green-600 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                    <span class="relative flex items-center justify-center">
-                        Más información
-                    </span>
-                </a> 
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ms.jpg') }}" alt="First slide">
-                <div class="absolute inset-0 bg-black/60 -z-0"></div>
-            </div>
-    
-            <!-- Fortinet -->
-            <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
-                    <img src="{{ asset('assets/img/logo-fortinet-partner.png') }}" class="h-12 md:h-16 mb-4" alt="">
-                    <h2 class="text-2xl lg:text-5xl text-black tracking-wide max-w-4xl font-[350]">
-                        Transformación Digital con enfoque en Seguridad de la Información
-                    </h2>
-                </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-red-500 rounded-full overflow-hidden group">
-                    <div class="absolute top-0 right-full w-full h-full bg-red-600 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                    <span class="relative flex items-center justify-center">
-                        Más información
-                    </span>
-                </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-fortinet.png') }}" alt="Second slide">
-                <div class="absolute inset-0 bg-white/30 -z-0"></div>
-            </div>
-    
-            <!-- Autodek -->
-            <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
-                    <img src="{{ asset('assets/img/autodesk.png') }}" class="h-10 md:h-12 mb-4" alt="">
-                    <h2 class="text-2xl lg:text-5xl text-black tracking-wide max-w-4xl font-[350]">
-                        Diseño 3D para Ingeniería y Construcción
-                    </h2>
-                </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
-                    <div class="absolute top-0 right-full w-full h-full bg-sky-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                    <span class="relative flex items-center justify-center">
-                        Más información
-                    </span>
-                </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ac.jpg') }}" alt="Second slide">
-                <div class="absolute inset-0 bg-white/10 -z-0"></div>
-            </div>
-    
-            <!-- Cisco -->
-            <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
-                    <img src="{{ asset('assets/img/logo-cisco-bco.png') }}" class="h-16 md:h-20 mb-4" alt="">
-                    <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl font-[350]">
-                        La solución completa en
-                    </h2>
-                    <div class="text-sky-500 text-3xl md:text-5xl typewriter">
-                        <span class="typewriter-container">
-                            <span class="typewriter-text" data-words="Cloud, Redes, Cyberseguridad"></span>
-                            <span class="typewriter-cursor"></span>
-                        </span>
+
+                {{-- Columna derecha — Bento stats (solo desktop) --}}
+                <div class="hidden md:grid col-span-2 grid-cols-2 gap-3">
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">+200</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Clientes</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">10+</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Años</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 col-span-2 flex flex-col items-center text-center">
+                        <span class="text-sm font-medium text-green-400 uppercase tracking-wider">Fortinet Partner</span>
+                        <span class="text-xs text-white/60 mt-1">Certified Network Security</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">24/7</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Soporte</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">+50</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Marcas</span>
                     </div>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
-                    <div class="absolute top-0 right-full w-full h-full bg-sky-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                    <span class="relative flex items-center justify-center">
-                        Más información
-                    </span>
-                </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
-                <div class="absolute inset-0 bg-black/60 -z-0"></div>
-            </div>
-    
-            <!-- CCTV -->
-            <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
-                    <img src="{{ asset('assets/img/video-vigilancia.png') }}" class="h-20 mb-4" alt="">
-                    <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl font-[350]">
-                        Video vigilancia para
-                    </h2>
-                    <div class="text-sky-500 text-sm md:text-5xl typewriter">
-                        <span class="typewriter-container">
-                            <span class="typewriter-text" data-words="Hogar o Empresa"></span>
-                            <span class="typewriter-cursor"></span>
-                        </span>
-                    </div>
-                </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-black bg-yellow-400 rounded-full overflow-hidden group">
-                    <div class="absolute top-0 right-full w-full h-full bg-yellow-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                    <span class="relative flex items-center justify-center">
-                        Más información
-                    </span>
-                </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
-                <div class="absolute inset-0 bg-black/60 -z-0"></div>
+
             </div>
         </div>
-    
-        <button type="button" class="slider-nav z-30"></button>
-        <button type="button" class="slider-nav slider-nav-next z-30"></button>
-    
-        <div class="slider-indicators ml-auto relative z-30">
-            <button class="active"><span class="sr-only">Slide 1</span></button>
-            <button><span class="sr-only">Slide 2</span></button>
-            <button><span class="sr-only">Slide 3</span></button>
-            <button><span class="sr-only">Slide 4</span></button>
-            <button><span class="sr-only">Slide 5</span></button>
-        </div>
-    </div>
+    </section>
     
 
     {{-- Ingeniería nuestra propuesta de valor. --}}
-    <x-nuestra-propuesta />
+    <div id="propuesta">
+        <x-nuestra-propuesta />
+    </div>
 
     <div class="py-10 md:py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
@@ -213,38 +156,8 @@
         </div>
     </div>
 
+    <x-porque-bitmovil-v2 />
+
     <x-partners-computo />
     
-    @push('script')
-   
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.typewriter-text').forEach(typewriterElement => {
-                const words = typewriterElement.getAttribute('data-words').split(', ');
-                let currentWordIndex = 0;
-                let charIndex = 0;
-                let isDeleting = false;
-                const typeSpeed = 150;
-                const deleteSpeed = 50;
-                const delayBetweenWords = 2000;
-    
-                function type() {
-                    const currentWord = words[currentWordIndex];
-                    typewriterElement.textContent = isDeleting ? currentWord.substring(0, charIndex--) : currentWord.substring(0, charIndex++);
-    
-                    if (!isDeleting && charIndex === currentWord.length) {
-                        setTimeout(() => isDeleting = true, delayBetweenWords);
-                    } else if (isDeleting && charIndex === 0) {
-                        isDeleting = false;
-                        currentWordIndex = (currentWordIndex + 1) % words.length;
-                    }
-    
-                    setTimeout(type, isDeleting ? deleteSpeed : typeSpeed);
-                }
-    
-                type();
-            });
-        });
-    </script>
-    @endpush
 </x-app-layout>

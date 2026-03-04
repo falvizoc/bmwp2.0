@@ -5,13 +5,13 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-2xl sm:text-4xl lg:text-5xl text-left font-light leading-tight tracking-widest mb-8">
-                            <span class="text-red-500">Ingeniería</span><br> nuestra propuesta de<br> 
-                            <span class="text-red-500">valor.</span>
+                            <span class="text-primary">Ingeniería</span><br> nuestra propuesta de<br>
+                            <span class="text-primary">valor.</span>
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="flex items-center md:items-start space-x-4">
                                 <div class="w-auto">
-                                    <ion-icon class="text-2xl md:text-3xl text-sky-500" name="checkmark-circle-outline"></ion-icon>
+                                    <i class="far fa-check-circle text-2xl md:text-3xl text-sky-500"></i>
                                 </div>
                                 <div>
                                     <h3 class="text-sm font-semibold text-black uppercase tracking-wide">
@@ -24,7 +24,7 @@
                             </div>
                             <div class="flex items-center md:items-start space-x-4">
                                 <div class="w-auto">
-                                    <ion-icon class="text-2xl md:text-3xl text-sky-500" name="trophy"></ion-icon>
+                                    <i class="fas fa-trophy text-2xl md:text-3xl text-sky-500"></i>
                                 </div>
                                 <div>
                                     <h3 class="text-sm font-semibold text-black uppercase tracking-wide">
@@ -37,7 +37,7 @@
                             </div>
                             <div class="flex items-center md:items-start space-x-4">
                                 <div class="w-auto">
-                                    <ion-icon class="text-2xl md:text-3xl text-sky-500" name="calendar"></ion-icon>
+                                    <i class="fas fa-calendar-alt text-2xl md:text-3xl text-sky-500"></i>
                                 </div>
                                 <div>
                                     <h3 class="text-sm font-semibold text-black uppercase tracking-wide">
@@ -50,7 +50,7 @@
                             </div>
                             <div class="flex items-center md:items-start space-x-4">
                                 <div class="w-auto">
-                                    <ion-icon class="text-2xl md:text-3xl text-sky-500" name="contract"></ion-icon>
+                                    <i class="fas fa-file-contract text-2xl md:text-3xl text-sky-500"></i>
                                 </div>
                                 <div>
                                     <h3 class="text-sm font-semibold text-black uppercase tracking-wide">
