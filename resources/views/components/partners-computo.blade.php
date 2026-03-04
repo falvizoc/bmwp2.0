@@ -6,17 +6,13 @@
         <p class="text-sm text-gray-400 text-center mb-8">
             Integramos soluciones de los fabricantes más importantes del mundo.
         </p>
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
-            <img loading="lazy" src="{{asset('img/partners/logo-1.png')}}" alt="Partner" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-2.png')}}" alt="Partner" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-3.png')}}" alt="Partner" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-4.png')}}" alt="Partner" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-5.png')}}" alt="Partner" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-6.png')}}" alt="Partner" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-7.png')}}" alt="Partner" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-8.png')}}" alt="Partner" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-27.png')}}" alt="Partner" class="h-6 object-contain grayscale hover:grayscale-0 transition-all duration-300">
-            <img loading="lazy" src="{{asset('img/partners/logo-9.png')}}" alt="Partner" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
+            <img loading="lazy" src="{{asset('assets/img/microsoft.png')}}" alt="Microsoft" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <img loading="lazy" src="{{asset('assets/img/logo-fortinet-partner.png')}}" alt="Fortinet" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <img loading="lazy" src="{{asset('img/partners/logo-1.png')}}" alt="HP" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <img loading="lazy" src="{{asset('img/partners/logo-5.png')}}" alt="Dell" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <img loading="lazy" src="{{asset('img/partners/logo-12.png')}}" alt="Panduit" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <img loading="lazy" src="{{asset('img/partners/logo-tripplite.svg')}}" alt="Tripp Lite by Eaton" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300">
         </div>
     </div>
 </section>

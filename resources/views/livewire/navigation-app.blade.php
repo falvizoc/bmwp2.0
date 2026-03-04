@@ -62,7 +62,7 @@
 
         {{-- Mega-menu desktop (Soluciones) --}}
         <div x-show="openMenuSoluciones" x-transition
-             class="hidden md:block absolute z-50 border-gray-200 shadow-sm bg-white border-y w-full">
+             class="absolute z-50 border-gray-200 shadow-sm bg-white border-y w-full">
             <div class="px-4 py-2 mx-auto text-gray-800" x-data="{openMenu: false}" @click.away="openMenu = false">
                 <ul class="grid sm:grid-cols-3 md:divide-x divide-gray-200">
                     @if ($solutions->count())

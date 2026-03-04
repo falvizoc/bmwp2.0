@@ -10,7 +10,7 @@
                 <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-5">
                     Tampico · Tamaulipas · Norte de México
                 </p>
-                <h1 class="text-3xl md:text-6xl font-light text-white leading-tight tracking-wide mb-5">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl font-light text-white leading-tight tracking-wide mb-5">
                     Integración TI para empresas en el norte de México.
                 </h1>
                 <p class="text-gray-300 text-sm md:text-lg font-light mb-8">
