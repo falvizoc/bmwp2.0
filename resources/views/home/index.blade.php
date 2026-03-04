@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="absolute inset-0 bg-black/70 -z-0"></div>
+        <div class="absolute inset-0 bg-black/80 -z-0"></div>
         <div class="hidden lg:block text-center absolute bottom-8 left-1/2 z-30">
             <a href="#propuesta" class="cursor-pointer inline-block shadow-md animate-updown rounded-full h-12 w-12 bg-blue-100 bg-opacity-20 text-gray-300 text-center hover:bg-primary duration-500">
                 <i class="fa fa-angle-down text-3xl pt-2"></i>
