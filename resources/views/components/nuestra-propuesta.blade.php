@@ -5,8 +5,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-2xl sm:text-4xl lg:text-5xl text-left font-light leading-tight tracking-widest mb-8">
-                            <span class="text-red-500">Ingeniería</span><br> nuestra propuesta de<br> 
-                            <span class="text-red-500">valor.</span>
+                            <span class="text-primary">Ingeniería</span><br> nuestra propuesta de<br>
+                            <span class="text-primary">valor.</span>
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="flex items-center md:items-start space-x-4">

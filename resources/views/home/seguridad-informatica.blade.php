@@ -11,7 +11,7 @@
             <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
                 Defiende tus sistemas con soluciones de seguridad de vanguardia
             </h2>
-            <a href="#" class="text-white text-sm md:text-base tracking-tight bg-red-600 px-5 py-3 h-14 rounded-full hover:bg-red-700 focus:bg-red-600 focus:ring-4 focus:ring-red-400 transition duration-200">
+            <a href="/contacto" class="text-white text-sm md:text-base tracking-tight bg-red-600 px-5 py-3 h-14 rounded-full hover:bg-red-700 focus:bg-red-600 focus:ring-4 focus:ring-red-400 transition duration-200">
                 Solicita una cotización
             </a>
         </div>
@@ -41,7 +41,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <!-- Seguridad Total 24/7 -->
                             <div class="">
-                                <a class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200" href="#">
+                                <div class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200">
                                     <div class="flex h-full flex-col items-start">
                                         <i class="fas fa-shield-alt text-green-500 text-3xl mb-6"></i> <!-- Icono de escudo de seguridad -->
                                         <div class="mt-auto max-w-xs">
@@ -53,11 +53,11 @@
                                             </p>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <!-- Detección Rápida -->
                             <div class="">
-                                <a class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200" href="#">
+                                <div class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200">
                                     <div class="flex h-full flex-col items-start">
                                         <i class="fas fa-bolt text-green-500 text-3xl mb-6"></i> <!-- Icono de rayo -->
                                         <div class="mt-auto max-w-xs">
@@ -69,11 +69,11 @@
                                             </p>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <!-- Respuesta Ágil -->
                             <div class="">
-                                <a class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200" href="#">
+                                <div class="group block h-auto xl:h-128 p-8 border border-green-500 border-opacity-30 hover:border-opacity-100 rounded-3xl transition duration-200">
                                     <div class="flex h-full flex-col items-start">
                                         <i class="fas fa-hand-paper text-green-500 text-3xl mb-6"></i> <!-- Icono de mano indicando alto -->
                                         <div class="mt-auto max-w-xs">
@@ -85,7 +85,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
