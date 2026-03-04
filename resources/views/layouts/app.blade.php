@@ -10,6 +10,11 @@
         <meta name="description" content="@yield('description', 'Integramos tecnología para empresas del norte de México: redes, seguridad informática, licenciamiento Microsoft, Fortinet y más. Tampico, Tamaulipas.')">
         <meta name="robots" content="index, follow">
 
+        {{-- Favicon --}}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/logos/favicon_192x192.png') }}">
+        <link rel="apple-touch-icon" href="{{ asset('img/logos/favicon_192x192.png') }}">
+
         {{-- Canonical --}}
         <link rel="canonical" href="{{ url()->current() }}">
 

@@ -5,7 +5,7 @@
             <div class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-6">
               <div class="col-span-2 md:col-span-6 flex items-center justify-between mb-4">
                 <div class="flex gap-6">
-                  <img src="{{asset('img/logos/favicon_192x192.png')}}" class="h-10 object-cover object-center" alt="">
+                  <img src="{{asset('img/logos/favicon_192x192.png')}}" class="h-10 object-contain" alt="Bitmovil">
                   <h2 class="text-base md:text-2xl font-light text-white flex-1 max-w-sm">
                     Mejoramos todos tus <b>procesos productivos</b> con <b>Tecnología</b>.
                   </h2>
