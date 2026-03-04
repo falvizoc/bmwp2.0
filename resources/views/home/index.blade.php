@@ -4,7 +4,7 @@
 
     {{-- HERO ESTÁTICO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
-             style="background-image: url('{{ asset('assets/img/carousel-cisco.jpeg') }}')">
+             style="background-image: url('{{ asset('assets/img/carousel-ms.jpg') }}')">
         <div class="absolute z-10 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
             <div class="max-w-2xl">
                 <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-5">
