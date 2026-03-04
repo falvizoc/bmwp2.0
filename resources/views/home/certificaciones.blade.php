@@ -27,7 +27,7 @@
                     <p class="text-sm text-gray-600">Licenciamiento por volumen para empresas, gobierno y educación. CSP certificado.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('assets/img/logo-fortinet-partner.png') }}" alt="Fortinet" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-fortinet.svg') }}" alt="Fortinet" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Fortinet Partner</h2>
                     <p class="text-sm text-gray-600">Seguridad de red, firewall, SD-WAN y protección endpoint con soluciones Fortinet certificadas.</p>
                 </div>
@@ -37,17 +37,17 @@
                     <p class="text-sm text-gray-600">UPS, PDUs y protección eléctrica para infraestructura TI crítica y centros de datos.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-12.png') }}" alt="Panduit" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-panduit.svg') }}" alt="Panduit" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Panduit</h2>
                     <p class="text-sm text-gray-600">Infraestructura física de redes: cableado estructurado, patch panels y gestión de cableado.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-1.png') }}" alt="HP" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-hp.svg') }}" alt="HP" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">HP Partner</h2>
                     <p class="text-sm text-gray-600">Equipo de cómputo, servidores e impresión HP para entornos empresariales.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('img/partners/logo-5.png') }}" alt="Dell" class="h-12 object-contain mb-6">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-dell.svg') }}" alt="Dell" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Dell Technologies</h2>
                     <p class="text-sm text-gray-600">Servidores, almacenamiento y workstations Dell para infraestructura TI empresarial.</p>
                 </div>
