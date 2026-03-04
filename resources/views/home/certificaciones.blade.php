@@ -31,10 +31,10 @@
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Fortinet Partner</h2>
                     <p class="text-sm text-gray-600">Seguridad de red, firewall, SD-WAN y protección endpoint con soluciones Fortinet certificadas.</p>
                 </div>
-                <div class="bg-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                <div class="rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow" style="background-color:#1d4289">
                     <img loading="lazy" src="{{ asset('assets/img/logo-cisco-bco.png') }}" alt="Cisco" class="h-12 object-contain mb-6">
                     <h2 class="text-lg font-semibold text-white mb-2">Cisco Partner</h2>
-                    <p class="text-sm text-gray-300">Redes, switching, routing y soluciones cloud con respaldo oficial Cisco Systems.</p>
+                    <p class="text-sm text-blue-200">Redes, switching, routing y soluciones cloud con respaldo oficial Cisco Systems.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
                     <img loading="lazy" src="{{ asset('assets/img/autodesk.png') }}" alt="Autodesk" class="h-12 object-contain mb-6">
