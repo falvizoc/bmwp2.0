@@ -1,6 +1,6 @@
 <x-app-layout>
     @section('title', 'Bitmovil — Integración TI en Tampico | Redes, Seguridad y Licenciamiento')
-    @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos seguridad Fortinet, licencias Microsoft y Autodesk, videovigilancia y más para empresas del norte de México.')
+    @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos seguridad Fortinet, licencias Microsoft, videovigilancia y más para empresas del norte de México.')
 
     {{-- HERO ESTÁTICO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
@@ -14,7 +14,7 @@
                     Integración TI para empresas en el norte de México.
                 </h1>
                 <p class="text-gray-300 text-sm md:text-lg font-light mb-8">
-                    Fortinet · Microsoft · Autodesk · Dell · HP
+                    Fortinet · Microsoft · Dell · HP · Panduit
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="https://wa.link/bitmovil"

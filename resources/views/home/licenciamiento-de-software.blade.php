@@ -1,6 +1,6 @@
 <x-app-layout>
-    @section('title', 'Licenciamiento de Software Microsoft y Autodesk en Tampico | Bitmovil')
-    @section('description', 'Licencias por volumen Microsoft Office, Windows Server, Autodesk y más para empresas, gobierno y educación en Tampico, Tamaulipas. CSP certificado.')
+    @section('title', 'Licenciamiento de Software Microsoft en Tampico | Bitmovil')
+    @section('description', 'Licencias por volumen Microsoft Office, Windows Server y más para empresas, gobierno y educación en Tampico, Tamaulipas. CSP certificado.')
 
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/licenciamiento.png') }}')">
