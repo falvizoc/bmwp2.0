@@ -1,6 +1,6 @@
 <x-app-layout>
-    @section('title', 'Certificaciones | Microsoft, Cisco, Fortinet, Autodesk — Bitmovil')
-    @section('description', 'Bitmovil cuenta con certificaciones activas de Microsoft, Cisco, Fortinet, HP, Dell y Autodesk. Garantía de calidad e integración tecnológica profesional en Tampico.')
+    @section('title', 'Certificaciones | Microsoft, Fortinet, HP, Dell, Panduit, Tripp Lite — Bitmovil')
+    @section('description', 'Bitmovil cuenta con certificaciones activas de Microsoft, Fortinet, HP, Dell, Panduit y Tripp Lite by Eaton. Garantía de calidad e integración tecnológica profesional en Tampico.')
 
     {{-- Hero --}}
     <section class="relative py-20 md:py-32 bg-primary text-white text-center">
@@ -31,15 +31,15 @@
                     <h2 class="text-lg font-semibold text-gray-900 mb-2">Fortinet Partner</h2>
                     <p class="text-sm text-gray-600">Seguridad de red, firewall, SD-WAN y protección endpoint con soluciones Fortinet certificadas.</p>
                 </div>
-                <div class="rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow" style="background-color:#1d4289">
-                    <img loading="lazy" src="{{ asset('assets/img/logo-cisco-bco.png') }}" alt="Cisco" class="h-12 object-contain mb-6">
-                    <h2 class="text-lg font-semibold text-white mb-2">Cisco Partner</h2>
-                    <p class="text-sm text-blue-200">Redes, switching, routing y soluciones cloud con respaldo oficial Cisco Systems.</p>
+                <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                    <img loading="lazy" src="{{ asset('img/partners/logo-tripplite.svg') }}" alt="Tripp Lite by Eaton" class="h-12 object-contain mb-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-2">Tripp Lite by Eaton</h2>
+                    <p class="text-sm text-gray-600">UPS, PDUs y protección eléctrica para infraestructura TI crítica y centros de datos.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <img loading="lazy" src="{{ asset('assets/img/autodesk.png') }}" alt="Autodesk" class="h-12 object-contain mb-6">
-                    <h2 class="text-lg font-semibold text-gray-900 mb-2">Autodesk Reseller</h2>
-                    <p class="text-sm text-gray-600">Licenciamiento oficial de AutoCAD, Revit y soluciones de diseño 3D para ingeniería y construcción.</p>
+                    <img loading="lazy" src="{{ asset('img/partners/logo-12.png') }}" alt="Panduit" class="h-12 object-contain mb-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-2">Panduit</h2>
+                    <p class="text-sm text-gray-600">Infraestructura física de redes: cableado estructurado, patch panels y gestión de cableado.</p>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
                     <img loading="lazy" src="{{ asset('img/partners/logo-1.png') }}" alt="HP" class="h-12 object-contain mb-6">
