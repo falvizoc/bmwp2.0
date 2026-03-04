@@ -3,21 +3,20 @@
     @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos redes Cisco, seguridad Fortinet, licencias Microsoft y Autodesk, videovigilancia y más para empresas del norte de México.')
 
     {{-- HERO ESTÁTICO --}}
-    <section class="relative min-h-[88vh] bg-no-repeat bg-center bg-cover flex items-center"
+    <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
              style="background-image: url('{{ asset('assets/img/carousel-cisco.jpeg') }}')">
-        <div class="absolute inset-0 bg-black/65 -z-0"></div>
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-12 py-24 md:py-32">
+        <div class="absolute z-10 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
             <div class="max-w-2xl">
                 <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-5">
                     Tampico · Tamaulipas · Norte de México
                 </p>
-                <h1 class="text-4xl md:text-6xl font-light text-white leading-tight tracking-wide mb-5">
+                <h1 class="text-3xl md:text-6xl font-light text-white leading-tight tracking-wide mb-5">
                     Integración TI para empresas en el norte de México.
                 </h1>
-                <p class="text-gray-300 text-base md:text-lg font-light mb-10">
+                <p class="text-gray-300 text-sm md:text-lg font-light mb-8">
                     Cisco · Fortinet · Microsoft · Autodesk · Dell · HP
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-3">
                     <a href="https://wa.link/bitmovil"
                        class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-primary rounded-full hover:opacity-90 transition duration-200">
                         <i class="fab fa-whatsapp"></i> Cotiza por WhatsApp
@@ -29,7 +28,8 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block absolute bottom-8 left-1/2 z-10">
+        <div class="absolute inset-0 bg-black/70 -z-0"></div>
+        <div class="hidden lg:block text-center absolute bottom-8 left-1/2 z-30">
             <a href="#propuesta" class="cursor-pointer inline-block shadow-md animate-updown rounded-full h-12 w-12 bg-blue-100 bg-opacity-20 text-gray-300 text-center hover:bg-primary duration-500">
                 <i class="fa fa-angle-down text-3xl pt-2"></i>
             </a>
