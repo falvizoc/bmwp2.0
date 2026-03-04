@@ -1,13 +1,14 @@
 <x-app-layout>
-    @section('title', 'Cableado Estructurado y Fibra Óptica en Tampico | Bitmovil')
-    @section('description', 'Instalación de cableado estructurado categoría 6A y fibra óptica para empresas en Tampico y norte de México. Certificación de infraestructura TI.')
+    @section('title', 'Cableado Estructurado y Fibra Óptica en ' . $geoLabel . ' | Bitmovil')
+    @section('description', 'Instalación de cableado estructurado categoría 6A y fibra óptica para empresas en ' . $geoLabel . '. Certificación de infraestructura TI. Cotiza hoy.')
+    @section('og_title', 'Cableado Estructurado y Fibra Óptica en ' . $geoLabel . ' | Bitmovil')
 
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/computoEmpresarial.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
 
             <h1 class="text-white text-3xl md:text-5xl 2xl:text-6xl mb-4">
-                Conexión Superior Garantizada
+                Cableado Estructurado y Fibra Óptica en {{ $geoLabel }}
             </h1>
             <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
                 Soluciones de cableado y fibra óptica para un rendimiento sin precedentes

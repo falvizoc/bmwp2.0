@@ -1,12 +1,13 @@
 <x-app-layout>
-    @section('title', 'Licenciamiento de Software Microsoft en Tampico | Bitmovil')
-    @section('description', 'Licencias por volumen Microsoft Office, Windows Server y más para empresas, gobierno y educación en Tampico, Tamaulipas. CSP certificado.')
+    @section('title', 'Licenciamiento Microsoft en ' . $geoLabel . ' | Bitmovil')
+    @section('description', 'Licencias por volumen Microsoft Office, Windows Server y más para empresas en ' . $geoLabel . '. CSP certificado. Cotiza hoy.')
+    @section('og_title', 'Licenciamiento Microsoft en ' . $geoLabel . ' | Bitmovil')
 
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/licenciamiento.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
             <h1 class="text-white text-3xl md:text-5xl 2xl:text-6xl mb-4">
-                Licencias de Software para Empresas
+                Licenciamiento Microsoft en {{ $geoLabel }}
             </h1>
             <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
                 Obtén el software que tu negocio necesita con las mejores condiciones de licenciamiento

@@ -1,9 +1,13 @@
 <x-app-layout>
+    @section('title', 'Soporte Técnico Empresarial en ' . $geoLabel . ' | Bitmovil')
+    @section('description', 'Servicio técnico y soporte TI para empresas en ' . $geoLabel . '. Mantenimiento preventivo, correctivo y asistencia remota. Cotiza hoy.')
+    @section('og_title', 'Soporte Técnico Empresarial en ' . $geoLabel . ' | Bitmovil')
+
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/computoEmpresarial.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28">
-            <h2 class="tracking-wide text-3xl md:text-5xl 2xl:text-6xl text-white max-w-3xl mb-4 font-light">
-                Soluciones Tecnológicas<br>Empresariales con
-            </h2>
+            <h1 class="tracking-wide text-3xl md:text-5xl 2xl:text-6xl text-white max-w-3xl mb-4 font-light">
+                Soporte Técnico Empresarial en {{ $geoLabel }}
+            </h1>
             <div class="text-white text-4xl md:text-7xl 2xl:text-8xl typewriter">
                 <span class="typewriter-container">
                     <span class="typewriter-text font-semibold" data-words="HP, Lenovo, Dell"></span>
