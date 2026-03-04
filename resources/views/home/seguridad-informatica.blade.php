@@ -1,4 +1,7 @@
 <x-app-layout>
+    @section('title', 'Seguridad Informática en Tampico | Fortinet, Cisco — Bitmovil')
+    @section('description', 'Soluciones de ciberseguridad y protección de redes para empresas de Tampico y el norte de México. Partner certificado Fortinet y Cisco Systems.')
+
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/seguridadInformatica.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
@@ -102,9 +105,9 @@
                 En alianza con los fabricantes más importantes de la industria de seguridad informática.
             </h4>
             <div class="flex space-x-12 md:space-x-20 items-center justify-center">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="">
-                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="Microsoft">
+                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="Dell Technologies">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="Fortinet">
             </div>
         </div>
     </section>

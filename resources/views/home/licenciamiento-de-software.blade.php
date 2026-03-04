@@ -1,4 +1,7 @@
 <x-app-layout>
+    @section('title', 'Licenciamiento de Software Microsoft y Autodesk en Tampico | Bitmovil')
+    @section('description', 'Licencias por volumen Microsoft Office, Windows Server, Autodesk y más para empresas, gobierno y educación en Tampico, Tamaulipas. CSP certificado.')
+
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/licenciamiento.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
@@ -102,9 +105,9 @@
                 En alianza con los principales fabricantes de software para empresas.
             </h4>
             <div class="flex space-x-12 md:space-x-20 items-center justify-center">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="">
-                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="Microsoft">
+                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="Dell Technologies">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="Fortinet">
             </div>
         </div>
     </section>

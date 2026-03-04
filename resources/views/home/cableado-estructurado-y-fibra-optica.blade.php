@@ -1,4 +1,7 @@
 <x-app-layout>
+    @section('title', 'Cableado Estructurado y Fibra Óptica en Tampico | Bitmovil')
+    @section('description', 'Instalación de cableado estructurado categoría 6A y fibra óptica para empresas en Tampico y norte de México. Certificación de infraestructura TI.')
+
     {{-- SECCIÓN HERO --}}
     <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/computoEmpresarial.png') }}')">
         <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
@@ -103,9 +106,9 @@
                 En alianza con los fabricantes más importantes de la industria de conectividad.
             </h4>
             <div class="flex space-x-12 md:space-x-20 items-center justify-center">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="">
-                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="">
-                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-1.png')}}" alt="Microsoft">
+                <img class="h-10 md:h-14 object-cover object-center" src="{{asset('img/partners/logo-3.png')}}" alt="Dell Technologies">
+                <img class="h-12 md:h-16 object-cover object-center" src="{{asset('img/partners/logo-5.png')}}" alt="Fortinet">
             </div>
         </div>
     </section>

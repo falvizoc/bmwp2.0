@@ -1,10 +1,10 @@
 <section class="relative py-10 md:py-16 overflow-hidden bg-white">
     <div class="relative container px-4 mx-auto">
       <div class="max-w-sm md:max-w-2xl mx-auto mb-8 md:mb-16 text-center">
-        <h1 class="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+        <h2 class="text-3xl md:text-4xl font-light text-gray-900 mb-6">
           <span>¿Por qué elegir a</span>
           <span class="font-bold text-primary">Bitmovil</span>?
-        </h1>
+        </h2>
         <p class="mx-auto text-xl md:text-2xl tracking-wide font-light text-gray-700">
             Impulsamos la productividad en entornos globales.
         </p>
@@ -20,9 +20,9 @@
                 <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold uppercase text-green-600 bg-green-100 rounded-full">
                     Diferencíate del resto
                 </span>
-                <h1 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
+                <h3 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
                     Dimensionamiento Personalizado
-                </h1>
+                </h3>
                 <p class="text-base md:text-lg mb-6">
                     En Bitmovil nuestro dimensionamiento personalizado es un <b>servicio clave</b> que asegura que las soluciones tecnológicas se adapten perfectamente a las necesidades específicas de cada cliente. Este enfoque nos permite ofrecer soluciones que no solo cumplen con los requisitos actuales de la empresa, sino que también tienen la flexibilidad para adaptarse a cambios futuros.
                 </p>
@@ -36,9 +36,9 @@
                 <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold uppercase text-blue-600 bg-blue-100 rounded-full">
                     Enfócate en tu operación
                 </span>
-                <h1 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
+                <h3 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
                     Puesta a punto
-                </h1>
+                </h3>
                 <p class="text-base md:text-lg mb-6">
                     La Puesta a Punto es un <b>servicio de alto valor</b> que permite a nuestros clientes concentrarse completamente en sus operaciones centrales, mientras nosotros nos encargamos de asegurar que la infraestructura tecnológica esté optimizada, funcional y lista para el uso inmediato. Este servicio es especialmente valioso porque minimiza las interrupciones y maximiza la eficiencia operativa desde el primer día.
                 </p>
@@ -60,9 +60,9 @@
                 <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold uppercase text-green-600 bg-green-100 rounded-full">
                     Asegura el éxito
                 </span>
-                <h1 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
+                <h3 class="font-heading text-2xl md:text-4xl text-gray-900 tracking-wide mb-6">
                     Experiencia y Confianza
-                </h1>
+                </h3>
                 <p class="text-base md:text-lg mb-6">
                     Nuestra experiencia nos ha permitido construir una <b>reputación sólida</b> en la industria TI, desarrollando Confianza con nuestros clientes mediante la entrega de soluciones tecnológicas efectivas, diseñadas para alinearse con las necesidades específicas y los objetivos estratégicos de cada cliente.
                 </p>

@@ -1,4 +1,5 @@
 <div>
+    @if(isset($total_preguntas) && $total_preguntas > 0)
     <section class="py-10 md:py-16 bg-gray-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="mx-auto">
@@ -68,5 +69,29 @@
               </div>
             </div>
         </div>
-      </section> 
+      </section>
+
+    {{-- FAQPage Schema — AEO: permite a Google y LLMs extraer preguntas y respuestas --}}
+    @if($preguntas_frecuentes->count() > 0)
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            @foreach($preguntas_frecuentes as $index => $faq)
+            {
+                "@type": "Question",
+                "name": {{ json_encode(strip_tags($faq->title)) }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ json_encode(strip_tags($faq->description)) }}
+                }
+            }{{ !$loop->last ? ',' : '' }}
+            @endforeach
+        ]
+    }
+    </script>
+    @endif
+
+    @endif
 </div>

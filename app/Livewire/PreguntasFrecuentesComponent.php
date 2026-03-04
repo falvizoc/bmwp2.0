@@ -16,6 +16,10 @@ class PreguntasFrecuentesComponent extends Component
     public function render()
     {
         # Preguntas Frecuentes
+        $total_preguntas = FrecuentQuestion::whereHas('pages', function($query) {
+                                $query->where('page_id', $this->page_id);
+                            })->count();
+
         $preguntas_frecuentes = FrecuentQuestion::whereHas('pages', function($query) {
                                     $query->where('page_id', $this->page_id);
                                 })
@@ -25,7 +29,7 @@ class PreguntasFrecuentesComponent extends Component
                                 })
                                 ->paginate(10);
 
-        return view('livewire.preguntas-frecuentes-component', compact('preguntas_frecuentes'));
+        return view('livewire.preguntas-frecuentes-component', compact('preguntas_frecuentes', 'total_preguntas'));
     }
 
     public function updated(){

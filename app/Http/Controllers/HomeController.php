@@ -96,5 +96,20 @@ class HomeController extends Controller
     {
         return view('home.servicio-tecnico');
     }
-    
+
+    public function nosotros()
+    {
+        return view('home.nosotros');
+    }
+
+    public function certificaciones()
+    {
+        return view('home.certificaciones');
+    }
+
+    public function contacto()
+    {
+        return view('home.contacto');
+    }
+
 }

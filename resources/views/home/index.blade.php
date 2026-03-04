@@ -1,9 +1,15 @@
 <x-app-layout>
-    <div id="carouselControlsIndicators" class="swiffy-slider relative h-[26rem] slider-nav-autoplay slider-item-nogap" data-slider-nav-autoplay-interval="7000">
+    @section('title', 'Bitmovil — Integración TI en Tampico | Redes, Seguridad y Licenciamiento')
+    @section('description', 'Empresa de tecnología en Tampico, Tamaulipas. Integramos redes Cisco, seguridad Fortinet, licencias Microsoft y Autodesk, videovigilancia y más para empresas del norte de México.')
+
+    {{-- H1 oculto visualmente pero indexable: el carousel no tiene H1 --}}
+    <h1 class="sr-only">Bitmovil Tecnologías — Integración de soluciones TI en Tampico, Tamaulipas</h1>
+
+    <div id="carouselControlsIndicators" class="swiffy-slider relative h-[18rem] md:h-[26rem] slider-nav-autoplay slider-item-nogap" data-slider-nav-autoplay-interval="7000">
         <div class="slider-container">
             <!-- Slide -->
             <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
+                <div class="absolute inset-0 top-0 flex flex-col items-center justify-center text-center z-30 px-4">
                     <img src="{{ asset('assets/img/microsoft.png') }}" class="h-16 md:h-24" alt="">
                     <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl">
                         Licencias por volumen para
@@ -15,55 +21,55 @@
                         </span>
                     </div>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-green-500 rounded-full overflow-hidden group">
+                <a href="/licenciamiento-de-software" class="absolute z-30 bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-green-500 rounded-full overflow-hidden group">
                     <div class="absolute top-0 right-full w-full h-full bg-green-600 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                     <span class="relative flex items-center justify-center">
                         Más información
                     </span>
-                </a> 
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ms.jpg') }}" alt="First slide">
+                </a>
+                <img loading="lazy" class="h-[18rem] md:h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ms.jpg') }}" alt="First slide">
                 <div class="absolute inset-0 bg-black/60 -z-0"></div>
             </div>
     
             <!-- Fortinet -->
             <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
+                <div class="absolute inset-0 top-0 flex flex-col items-center justify-center text-center z-30 px-4">
                     <img src="{{ asset('assets/img/logo-fortinet-partner.png') }}" class="h-12 md:h-16 mb-4" alt="">
                     <h2 class="text-2xl lg:text-5xl text-black tracking-wide max-w-4xl font-[350]">
                         Transformación Digital con enfoque en Seguridad de la Información
                     </h2>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-red-500 rounded-full overflow-hidden group">
+                <a href="/seguridad-informatica" class="absolute z-30 bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-red-500 rounded-full overflow-hidden group">
                     <div class="absolute top-0 right-full w-full h-full bg-red-600 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                     <span class="relative flex items-center justify-center">
                         Más información
                     </span>
                 </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-fortinet.png') }}" alt="Second slide">
+                <img loading="lazy" class="h-[18rem] md:h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-fortinet.png') }}" alt="Second slide">
                 <div class="absolute inset-0 bg-white/30 -z-0"></div>
             </div>
     
             <!-- Autodek -->
             <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
+                <div class="absolute inset-0 top-0 flex flex-col items-center justify-center text-center z-30 px-4">
                     <img src="{{ asset('assets/img/autodesk.png') }}" class="h-10 md:h-12 mb-4" alt="">
                     <h2 class="text-2xl lg:text-5xl text-black tracking-wide max-w-4xl font-[350]">
                         Diseño 3D para Ingeniería y Construcción
                     </h2>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
+                <a href="/licenciamiento-de-software" class="absolute z-30 bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
                     <div class="absolute top-0 right-full w-full h-full bg-sky-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                     <span class="relative flex items-center justify-center">
                         Más información
                     </span>
                 </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ac.jpg') }}" alt="Second slide">
+                <img loading="lazy" class="h-[18rem] md:h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-ac.jpg') }}" alt="Second slide">
                 <div class="absolute inset-0 bg-white/10 -z-0"></div>
             </div>
     
             <!-- Cisco -->
             <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
+                <div class="absolute inset-0 top-0 flex flex-col items-center justify-center text-center z-30 px-4">
                     <img src="{{ asset('assets/img/logo-cisco-bco.png') }}" class="h-16 md:h-20 mb-4" alt="">
                     <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl font-[350]">
                         La solución completa en
@@ -75,37 +81,37 @@
                         </span>
                     </div>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
+                <a href="/redes-inalambricas" class="absolute z-30 bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-white bg-sky-400 rounded-full overflow-hidden group">
                     <div class="absolute top-0 right-full w-full h-full bg-sky-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                     <span class="relative flex items-center justify-center">
                         Más información
                     </span>
                 </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
+                <img loading="lazy" class="h-[18rem] md:h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
                 <div class="absolute inset-0 bg-black/60 -z-0"></div>
             </div>
-    
+
             <!-- CCTV -->
             <div class="relative">
-                <div class="absolute inset-0 -top-16 flex flex-col items-center justify-center text-center z-30">
+                <div class="absolute inset-0 top-0 flex flex-col items-center justify-center text-center z-30 px-4">
                     <img src="{{ asset('assets/img/video-vigilancia.png') }}" class="h-20 mb-4" alt="">
                     <h2 class="text-2xl lg:text-5xl text-white tracking-wide max-w-4xl font-[350]">
                         Video vigilancia para
                     </h2>
-                    <div class="text-sky-500 text-sm md:text-5xl typewriter">
+                    <div class="text-sky-500 text-2xl md:text-5xl typewriter">
                         <span class="typewriter-container">
                             <span class="typewriter-text" data-words="Hogar o Empresa"></span>
                             <span class="typewriter-cursor"></span>
                         </span>
                     </div>
                 </div>
-                <a href="#" class="absolute z-30 bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-black bg-yellow-400 rounded-full overflow-hidden group">
+                <a href="/video-vigilancia" class="absolute z-30 bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 text-xs md:text-sm py-3 px-6 text-black bg-yellow-400 rounded-full overflow-hidden group">
                     <div class="absolute top-0 right-full w-full h-full bg-yellow-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                     <span class="relative flex items-center justify-center">
                         Más información
                     </span>
                 </a>
-                <img loading="lazy" class="h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
+                <img loading="lazy" class="h-[18rem] md:h-[26rem] w-full object-cover object-center" src="{{ asset('assets/img/carousel-cisco.jpeg') }}" alt="Second slide">
                 <div class="absolute inset-0 bg-black/60 -z-0"></div>
             </div>
         </div>
@@ -212,6 +218,8 @@
                 </div>
         </div>
     </div>
+
+    <x-porque-bitmovil-v2 />
 
     <x-partners-computo />
     

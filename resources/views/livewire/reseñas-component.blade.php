@@ -1,4 +1,5 @@
 <div>
+    @if($reseñas->count() > 0)
     <section class="bg-gray-100 py-16">
         <div class="max-w-md md:max-w-screen-xl px-4 mx-auto text-center">
             <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold uppercase text-blue-600 bg-blue-100 rounded-full">
@@ -31,5 +32,5 @@
         </div>
        
     </section>
-    
+    @endif
 </div>

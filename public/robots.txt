@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+Disallow: /api
+Disallow: /livewire
+
+Sitemap: https://bitmovil.mx/sitemap.xml

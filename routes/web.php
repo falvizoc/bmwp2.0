@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/nosotros', [HomeController::class, 'nosotros'])->name('nosotros');
+Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
+Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto');
 
 $services = Cache::remember('services', 60 * 60, function () {
     return Service::all();
