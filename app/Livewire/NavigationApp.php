@@ -14,7 +14,7 @@ class NavigationApp extends Component
     public function mount()
     {
         if (Schema::hasTable('solutions')) {
-            $this->solutions = Solution::with('services')->get();
+            $this->solutions = Solution::with(['services' => fn($q) => $q->where('show_in_nav', true)])->get();
         } else {
             $this->solutions = collect(); // Retorna una colección vacía si no existe la tabla
         }
