@@ -1,6 +1,6 @@
 <div class="sticky top-0 z-50" x-data="{ mobileOpen: false, openMenuSoluciones: null }" @click.away="openMenuSoluciones = null">
     <nav class="bg-primary relative">
-        <div class="flex items-center justify-between max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
 
             {{-- Logo --}}
             <a href="/" class="flex items-center">
@@ -18,11 +18,14 @@
                                class="text-xs transition-all duration-200 group-hover:text-yellow-400 ml-1"></i>
                         </button>
                     </li>
-                    <li><a href="{{ route('nosotros') }}" class="text-white hover:text-yellow-400 transition-colors">Nosotros</a></li>
-                    <li><a href="{{ route('certificaciones') }}" class="text-white hover:text-yellow-400 transition-colors">Certificaciones</a></li>
-                    <li><a href="{{ route('contacto') }}" class="text-white hover:text-yellow-400 transition-colors">Contacto</a></li>
+                    <li><a href="{{ route('nosotros') }}" class="nav-link-animated text-white hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                    <li><a href="{{ route('certificaciones') }}" class="nav-link-animated text-white hover:text-yellow-400 transition-colors">Certificaciones</a></li>
+                    <li><a href="{{ route('contacto') }}" class="nav-link-animated text-white hover:text-yellow-400 transition-colors">Contacto</a></li>
                 </ul>
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-3">
+                    <a href="tel:+528332272527" class="hidden lg:inline text-white/70 hover:text-white text-sm transition-colors">
+                        ☎ (833) 227-2527
+                    </a>
                     <a target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=5218332272527&text=%C2%A1Hola!%20Bitmovil."
                        class="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-green-500 hover:bg-green-600 rounded-full transition">
                         <i class="fab fa-whatsapp text-base"></i> Cotizar

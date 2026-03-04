@@ -26,3 +26,21 @@
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+/* CTA buttons */
+.btn-primary { transition: transform 150ms ease, box-shadow 150ms ease; }
+.btn-primary:hover { transform: scale(1.03); box-shadow: 0 8px 25px rgba(0,0,0,0.25); }
+.btn-primary:active { transform: scale(0.97); }
+
+/* Service cards lift */
+.card-service { transition: transform 200ms ease, box-shadow 200ms ease; }
+.card-service:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+
+/* Nav link underline */
+.nav-link-animated { position: relative; }
+.nav-link-animated::after {
+    content: ''; position: absolute; bottom: -2px; left: 0;
+    width: 0; height: 2px; background: #facc15;
+    transition: width 200ms ease;
+}
+.nav-link-animated:hover::after { width: 100%; }

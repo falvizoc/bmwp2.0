@@ -4,23 +4,23 @@
     @section('og_title', 'Videovigilancia CCTV para Empresas en ' . $geoLabel . ' | Bitmovil')
 
     {{-- SECCIÓN HERO --}}
-    <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('{{ asset('img/hero/videoVigilancia.png') }}')">
-        <div class="absolute z-30 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
+    <section class="relative min-h-[50vh] flex items-center bg-gradient-to-br from-[#1a1a2e] via-[#073B74] to-[#0A4C98]">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-16 w-full">
             <h1 class="text-white text-3xl md:text-5xl 2xl:text-6xl mb-4">
                 Videovigilancia CCTV para Empresas en {{ $geoLabel }}
             </h1>
-            <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-8 font-light">
+            <h2 class="tracking-wide text-xl md:text-3xl 2xl:text-4xl text-white max-w-md md:max-w-3xl mb-4 font-light">
                 Protege tu propiedad con sistemas de video vigilancia de última generación
             </h2>
-            <a href="/contacto" class="text-white text-sm md:text-base tracking-tight bg-red-600 px-5 py-3 h-14 rounded-full hover:bg-red-700 focus:bg-red-600 focus:ring-4 focus:ring-red-400 transition duration-200">
-                Solicita una cotización
-            </a>
-        </div>
-        <div class="absolute inset-0 bg-black/50 -z-0"></div>
-
-        <div class="hidden lg:block text-center absolute bottom-20 left-1/2 z-30">
-            <a href="#ventajas" tabindex="0" class="cursor-pointer inline-block shadow-md animate-updown rounded-full h-12 w-12 bg-blue-100 bg-opacity-20 text-gray-300 text-center hover:bg-primary duration-500">
-              <i class="fa fa-angle-down text-3xl pt-2"></i>
+            <div class="flex flex-wrap gap-3 mb-8 text-sm text-white/80">
+                <span class="flex items-center gap-1"><i class="fas fa-check-circle text-green-400"></i> Fortinet Partner</span>
+                <span class="flex items-center gap-1"><i class="fas fa-check-circle text-green-400"></i> +200 clientes</span>
+                <span class="flex items-center gap-1"><i class="fas fa-check-circle text-green-400"></i> Respuesta &lt;2h</span>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5218332272527&text=Hola%20Bitmovil%2C%20requiero%20informaci%C3%B3n%20sobre%20Videovigilancia%20CCTV."
+               target="_blank" rel="nofollow"
+               class="btn-primary inline-flex items-center gap-2 text-white text-sm md:text-base bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full transition duration-200">
+                <i class="fab fa-whatsapp text-lg"></i> Solicita una cotización
             </a>
         </div>
     </section>

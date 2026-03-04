@@ -4,36 +4,62 @@
     @section('og_title', 'Integración TI para Empresas en ' . $geoLabel . ' | Bitmovil')
 
     {{-- HERO ESTÁTICO --}}
-    <section class="relative h-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+    <section class="relative h-full min-h-[65vh] bg-no-repeat bg-center bg-cover"
              style="background-image: url('{{ asset('assets/img/carousel-ms.jpg') }}')">
-        <div class="absolute z-10 inset-0 max-w-7xl mx-auto px-4 md:px-12 py-20 2xl:py-28 mt-10">
-            <div class="max-w-5xl">
-                <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-5">
-                    Tampico · Tamaulipas · Norte de México
-                </p>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl font-light text-white leading-tight tracking-wide mb-5">
-                    Integración TI para Empresas en {{ $geoLabel }}.
-                </h1>
-                <p class="text-gray-300 text-sm md:text-lg font-light mb-8">
-                    Fortinet · Microsoft · Dell · HP · Panduit
-                </p>
-                <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="https://wa.link/bitmovil"
-                       class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-green-500 hover:bg-green-600 rounded-full transition duration-200">
-                        <i class="fab fa-whatsapp text-xl"></i> Cotiza por WhatsApp
-                    </a>
-                    <a href="#propuesta"
-                       class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white border border-white/25 rounded-full hover:bg-white/10 transition duration-200">
-                        Conoce las soluciones <i class="fa fa-angle-down text-xs"></i>
-                    </a>
+        <div class="absolute inset-0 bg-black/60 -z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-16 md:py-20 mt-10 h-full min-h-[65vh] flex items-center">
+            <div class="grid md:grid-cols-5 gap-8 items-center w-full">
+
+                {{-- Columna izquierda --}}
+                <div class="col-span-5 md:col-span-3">
+                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
+                        Tampico · Tamaulipas · Norte de México
+                    </p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight tracking-wide mb-4">
+                        Integración TI para Empresas en {{ $geoLabel }}.
+                    </h1>
+                    <div class="flex flex-wrap items-center gap-4 mb-6">
+                        <img src="{{ asset('img/partners/logo-fortinet.svg') }}" class="h-5 grayscale opacity-70" alt="Fortinet Partner">
+                        <img src="{{ asset('img/partners/logo-microsoft.png') }}" class="h-4 grayscale opacity-70" alt="Microsoft">
+                        <img src="{{ asset('img/partners/logo-hp.png') }}" class="h-5 grayscale opacity-70" alt="HP">
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://wa.link/bitmovil"
+                           class="btn-primary inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white bg-green-500 hover:bg-green-600 rounded-full transition duration-200">
+                            <i class="fab fa-whatsapp text-xl"></i> Cotiza por WhatsApp
+                        </a>
+                        <a href="#propuesta"
+                           class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm text-white border border-white/25 rounded-full hover:bg-white/10 transition duration-200">
+                            Ver soluciones <i class="fa fa-angle-down text-xs"></i>
+                        </a>
+                    </div>
                 </div>
+
+                {{-- Columna derecha — Bento stats (solo desktop) --}}
+                <div class="hidden md:grid col-span-2 grid-cols-2 gap-3">
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">+200</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Clientes</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">10+</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Años</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 col-span-2 flex flex-col items-center text-center">
+                        <span class="text-sm font-medium text-green-400 uppercase tracking-wider">Fortinet Partner</span>
+                        <span class="text-xs text-white/60 mt-1">Certified Network Security</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">24/7</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Soporte</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-center text-center">
+                        <span class="text-3xl font-semibold text-white">+50</span>
+                        <span class="text-xs text-white/70 mt-1 uppercase tracking-wide">Marcas</span>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="absolute inset-0 bg-black/80 -z-0"></div>
-        <div class="hidden lg:block text-center absolute bottom-8 left-1/2 z-30">
-            <a href="#propuesta" class="cursor-pointer inline-block shadow-md animate-updown rounded-full h-12 w-12 bg-blue-100 bg-opacity-20 text-gray-300 text-center hover:bg-primary duration-500">
-                <i class="fa fa-angle-down text-3xl pt-2"></i>
-            </a>
         </div>
     </section>
     

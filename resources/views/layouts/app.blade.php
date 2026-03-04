@@ -133,7 +133,6 @@
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">
-            <x-topbar />
             @livewire('navigation-app')
 
             <!-- Page Heading -->
